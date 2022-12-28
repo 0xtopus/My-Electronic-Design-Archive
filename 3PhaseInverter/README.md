@@ -1,5 +1,7 @@
 # Three Phase Inverter Simulation
 
+### Ok seems like it can't be displayed rightly on github page hmm.. You can download it and use *typora~ to read it!
+
 I design a *Three Phase Inverter Simulation* by using simulink of matlab.  It is basically a design homework of my power electronic course. The **DC voltage input**, **switch frequency of carrier wave** and **active power output** are 710V, 14kHz and 11kW which are adopted based on my student ID numbers lol. The **sine wave frequency** is 50Hz and I use **resistive load(Y-floating style)** with 220V root mean square phase voltage output. I also design part to detect input waves, output waves( before filter and after) and THD measurement for phase to phase voltage. For the part of LC filter, I refer to some papers that suggest using these equations to acquire a desired value :
 $$
 L = \sqrt \frac{\frac{\omega_{1}U_{o}^{2}}{\omega_{L}^{2}} + \frac{\omega_{1}^{3}U_{o}^{2}}{\omega_{L}^{4}}}{\omega_{1}I_{o}^{2}}
