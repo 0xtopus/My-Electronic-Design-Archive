@@ -1,4 +1,4 @@
-# sixty counter on Multism
+# sixty counter on Multisim
 
 sixty counter using a 74ls160 and a 74ls163.
 
@@ -11,4 +11,4 @@ The 74ls160 on the right flashs leds which stand for 0~6 to indicate the result.
 
 
 
-<img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230117214356759.png" alt="image-20230117214356759" style="zoom:150%;" />
+<img src="./sixty_counter.png" alt="image-20230117214356759" style="zoom:150%;" />
