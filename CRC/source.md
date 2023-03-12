@@ -1,0 +1,1 @@
+Based on tutorial on <a href="https://ww2.mathworks.cn/help/matlab/matlab_prog/perform-cyclic-redundancy-check.html">this page</a>.
