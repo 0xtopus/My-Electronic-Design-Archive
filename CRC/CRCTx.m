@@ -1,7 +1,7 @@
-Tx = 0b1010001101u32;
+% @Source https://ww2.mathworks.cn/help/matlab/matlab_prog/perform-cyclic-redundancy-check.html
+Tx = 0b1010001101u32;   % I ran this on matlab2020 and 2016 and found that matlab2016 doesn't support this unsigned definition
 Gx = 0b110101u32;
-%110011
-%11001
+
 msgLength = 10;
 divisorDegree = 5;
 
@@ -23,20 +23,8 @@ end
 CRC_value = bitshift(remainder, -msgLength);
 
 save('CRC_value');
-
+% print check value
 remainder = bitshift(Tx, divisorDegree);
 remainder = bitor(remainder, CRC_value);
 remainder = bitset(remainder, 6);
 dec2bin(remainder)
-
-% 
-% 1101100111011010
-% 1101100111011010  000
-% 1101100111011110  110
-
-% head = length(Tx) + 1;
-% tail = length(Tx) + length(Gx) - 1
-% for i = head:tail
-%     Tx(i) = 0;
-% end
-% Tx
